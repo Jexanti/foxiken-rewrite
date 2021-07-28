@@ -1,0 +1,22 @@
+{
+  "name": "foxiken-rewrite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jexanti/foxiken-rewrite.git"
+  },
+  "author": "Jexanti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jexanti/foxiken-rewrite/issues"
+  },
+  "homepage": "https://github.com/Jexanti/foxiken-rewrite#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
+}
