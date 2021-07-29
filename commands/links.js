@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 var botprefix = ('f/')
 module.exports = {
-    name: "command name",
+    name: "links",
     description: "command name here",
     async run (bot, message, args) {
         message.channel.send("Click here to see some useful links: https://www.linktr.ee/foxiken");

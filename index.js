@@ -21,6 +21,10 @@ bot.on("message", async message => {
     if(message.channel.type === 'dm') {
         message.channel.send("I don't work in DMs, Try adding me to your server with the `"+prefix+"invite` command.")
     }
+    if (message.content === '<@!799198242683879454>') {
+		message.channel.send('https://cdn.discordapp.com/attachments/868517176586436611/868526673417613353/9k.png')
+		message.channel.send("Oh, it was you, <@"+message.author+">.")
+	}
     if(message.content.startsWith(prefix)) {
         const args = message.content.slice(prefix.length).trim().split(/ +/);
         const command = args.shift().toLowerCase();
