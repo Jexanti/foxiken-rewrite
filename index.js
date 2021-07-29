@@ -3,6 +3,7 @@ const config = require('./config.json');
 const bot = new Discord.Client();
 const { readdirSync } = require('fs');
 const { join } = require('path');
+const { notDeepEqual } = require('assert');
 var prefix = (config.prefix)
 bot.commands = new Discord.Collection();
 const commandFiles = readdirSync(join(__dirname, "commands")).filter(file => file.endsWith(".js"));
@@ -23,7 +24,7 @@ bot.on("message", async message => {
     if(message.content.startsWith(prefix)) {
         const args = message.content.slice(prefix.length).trim().split(/ +/);
         const command = args.shift().toLowerCase();
-        if(!bot.commands.has(command)) return;
+        if(!bot.commands.has(command)) return; 
         try {
             bot.commands.get(command).run(bot, message, args);
         } catch (error){

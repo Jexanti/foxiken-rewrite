@@ -4,6 +4,7 @@ module.exports = {
     name: "command name",
     description: "command name here",
     async run (bot, message, args) {
-        //command stuff here
+        message.channel.send("Click here to see some useful links: https://www.linktr.ee/foxiken");
+		console.log('Command run: '+botprefix+'links by user '+message.author);
     }
 }
